@@ -27,9 +27,6 @@ pipeline {
 	 sh 'node server.js'
       	}
       }
-	 
-	
-      }
-    }      
+	    
   }
 }
