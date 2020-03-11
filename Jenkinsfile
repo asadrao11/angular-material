@@ -17,9 +17,16 @@ pipeline {
       }
     }
      
-    stage('Test') {
+    stage('build') {
       steps {
-         sh 'npm test'
+         sh 'ng build'
+
+    stage('run') {
+      steps {
+	 sh 'node server.js'
+}
+
+}
       }
     }      
   }
