@@ -20,13 +20,15 @@ pipeline {
     stage('build') {
       steps {
          sh 'ng build'
-
+	}
+      }
     stage('run') {
       steps {
 	 sh 'node server.js'
-      
-	 }
-	}
+      	}
+      }
+	 
+	
       }
     }      
   }
